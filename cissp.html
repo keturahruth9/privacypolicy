@@ -4,180 +4,215 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — CISSP Exam – Systems Security</title>
-  <meta name="description" content="Privacy Policy for the CISSP Exam – Systems Security app. We do not collect personal data or request device permissions.">
+  <meta name="description" content="Privacy Policy for the CISSP Exam – Systems Security app. We value your privacy and do not collect personal data or request device permissions.">
   <meta name="author" content="CISSP Exam – Systems Security">
   <link rel="canonical" href="https://your-username.github.io/your-repo/cissp.html">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg: #f7fafc;
-      --card: #ffffff;
-      --muted: #6b7280;
-      --accent: #1f2937;
-      --primary: #1e3a8a;
+      --primary: #1e40af;
+      --secondary: #0ea5e9;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+      --card-bg: rgba(255, 255, 255, 0.75);
+      --border: rgba(255, 255, 255, 0.3);
+      --shadow: 0 10px 40px rgba(30, 64, 175, 0.15);
+      --radius: 20px;
     }
 
     body {
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      line-height: 1.6;
-      color: var(--accent);
-      background: linear-gradient(180deg, #f0f4ff, #e8ecf7);
-      padding: 32px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text-dark);
+      background: radial-gradient(circle at top left, #dbeafe 0%, #e0f2fe 50%, #f0f9ff 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: var(--card);
-      padding: 28px;
-      border-radius: 12px;
-      box-shadow: 0 6px 30px rgba(31, 41, 55, 0.08);
+      max-width: 920px;
+      width: 100%;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border-radius: var(--radius);
+      padding: 48px 42px 54px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 6px;
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 50px rgba(30, 58, 138, 0.2);
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
       color: var(--primary);
-    }
-
-    p.lead {
-      color: var(--muted);
-      margin-top: 0;
+      margin-bottom: 4px;
     }
 
     header small {
       display: block;
-      color: var(--muted);
+      color: var(--text-muted);
       margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    p.lead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-top: 0;
+      margin-bottom: 18px;
+      line-height: 1.8;
     }
 
     section {
-      margin-top: 18px;
+      margin-top: 28px;
     }
 
     h2 {
-      color: var(--primary);
-      font-size: 1.2rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      color: var(--secondary);
       margin-bottom: 8px;
     }
 
     ul {
-      margin: 8px 0 0 20px;
+      margin: 8px 0 0 22px;
     }
 
     li {
-      margin-bottom: 4px;
-    }
-
-    code {
-      background: #f3f4f6;
-      padding: 2px 6px;
-      border-radius: 6px;
-      font-family: monospace;
-    }
-
-    footer {
-      margin-top: 28px;
-      font-size: 0.9rem;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 6px 12px;
-      background: #e0e7ff;
-      color: var(--primary);
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.8rem;
-      box-shadow: 0 1px 4px rgba(30, 58, 138, 0.2);
+      margin-bottom: 6px;
+      color: var(--text-dark);
+      line-height: 1.6;
     }
 
     a {
-      color: #0b63ff;
+      color: var(--secondary);
       text-decoration: none;
+      font-weight: 600;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
-      body { padding: 20px; }
-      .container { padding: 22px; }
-      h1 { font-size: 1.5rem; }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 10px 16px;
+      background: linear-gradient(135deg, #bfdbfe, #93c5fd);
+      color: #1e3a8a;
+      border-radius: 999px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+      box-shadow: 0 3px 10px rgba(30, 58, 138, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .badge:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 14px rgba(30, 58, 138, 0.25);
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 32px 26px 40px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container" role="main">
+  <main class="container" role="main">
     <header>
       <h1>Privacy Policy</h1>
       <small>Effective Date: <strong>January 1, 2025</strong></small>
       <p class="lead">
-        Thank you for using the <strong>CISSP Exam – Systems Security</strong> app.
-        We respect your privacy and created this page to explain how we handle information when you use our app.
+        Welcome to the <strong>CISSP Exam – Systems Security</strong> app.
+        We take your privacy seriously. This document explains how we handle data — in short, we don’t collect or store any personal information.
       </p>
     </header>
 
     <section id="no-collection">
       <h2>1. Information We Do Not Collect</h2>
       <p>
-        We do not collect any personal information from users of the
-        <strong>CISSP Exam – Systems Security</strong> app. This includes, but is not limited to:
+        The <strong>CISSP Exam – Systems Security</strong> app does <strong>not</strong> collect or share any personal data. We never ask for:
       </p>
       <ul>
-        <li>Personal identification details (e.g., name, email address)</li>
-        <li>Contact details (e.g., phone number)</li>
-        <li>Device identifiers or any other personally identifiable information</li>
+        <li>Names, email addresses, or contact details</li>
+        <li>Device identifiers or IP addresses</li>
+        <li>Analytics data, cookies, or user behavior information</li>
       </ul>
     </section>
 
     <section id="permissions">
       <h2>2. Permissions and Access</h2>
       <p>
-        The app does not request or require any permissions to access your device’s data,
-        contacts, storage, or personal information.
-        The <strong>CISSP Exam – Systems Security</strong> app operates completely offline and independently of any user data.
+        Our app does not require access to your device’s storage, location, camera, or contacts. You can use it safely without granting any special permissions.
       </p>
     </section>
 
     <section id="data-storage">
       <h2>3. Data Storage and Security</h2>
       <p>
-        Because we do not collect or store personal data, there is no personal information at risk.
-        We do not maintain databases, analytics tools, or cloud storage systems for user data.
+        Since we do not collect personal data, there are no databases or external servers associated with the app.
+        All content operates fully offline and remains private on your device.
       </p>
     </section>
 
     <section id="third-party">
       <h2>4. Third-Party Services</h2>
       <p>
-        Our app does not use or connect to any third-party services that track, collect, or share information.
-        We do not use advertising, analytics, or social login integrations.
+        The <strong>CISSP Exam – Systems Security</strong> app does not use analytics, ads, or any third-party integrations.
+        No user data is ever shared, sold, or processed externally.
       </p>
     </section>
 
     <section id="changes">
-      <h2>5. Changes to This Privacy Policy</h2>
+      <h2>5. Policy Updates</h2>
       <p>
-        We may update this Privacy Policy occasionally to reflect changes in our practices or for legal reasons.
-        Any updates will be posted on this page, and the effective date will be revised accordingly.
-        We encourage you to review this page periodically for the latest version.
+        We may occasionally update this Privacy Policy for clarity or compliance reasons.
+        Any updates will appear on this page, and the effective date will change accordingly.
       </p>
     </section>
 
     <section id="contact">
       <h2>6. Contact Us</h2>
       <p>
-        If you have any questions or concerns about this Privacy Policy or our app,
-        please contact us at <a href="mailto:Keturahruth9@gmail.com">Keturahruth9@gmail.com</a>.
+        If you have questions or feedback about this Privacy Policy, contact us at:
+        <a href="mailto:Keturahruth9@gmail.com">Keturahruth9@gmail.com</a>
       </p>
     </section>
 
     <footer>
       <p class="badge">CISSP Exam – Systems Security</p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
