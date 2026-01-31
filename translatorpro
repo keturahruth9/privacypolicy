@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Translator Pro+</title>
+  <meta name="description" content="Privacy Policy for Translator Pro+. We respect your privacy and do not store personal data.">
+  <meta name="author" content="Translator Pro+">
+  <link rel="canonical" href="https://your-username.github.io/your-repo/translator-pro-plus.html">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #f5f7ff;
+      color: #1e293b;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 18px;
+      padding: 42px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 6px;
+      color: #4f46e5;
+    }
+
+    small {
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      margin-top: 32px;
+      color: #6366f1;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #475569;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #4f46e5;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #64748b;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <small>Effective Date: <strong>January 1, 2026</strong></small>
+
+      <p>
+        Welcome to <strong>Translator Pro+</strong>.
+        Your privacy is important to us. This Privacy Policy explains how your information is handled when you use our app.
+      </p>
+    </header>
+
+    <section>
+      <h2>1. Information We Collect</h2>
+      <p>
+        <strong>Translator Pro+</strong> does <strong>not</strong> collect, store, or share personal information such as:
+      </p>
+      <ul>
+        <li>Name, email address, or contact details</li>
+        <li>Account credentials or passwords</li>
+        <li>Device identifiers or precise location data</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Voice, Camera, and Text Data</h2>
+      <p>
+        Translator Pro+ allows translation using text, voice input, and camera images.
+        Any text, speech, or images you provide are used <strong>only temporarily</strong> to perform the requested translation.
+      </p>
+      <p>
+        We do <strong>not</strong> store, save, or log your translations on our servers.
+        Processing may occur locally on your device or through trusted translation services strictly for providing the translation result.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Permissions</h2>
+      <p>
+        The app may request the following permissions only when needed:
+      </p>
+      <ul>
+        <li><strong>Microphone</strong> – for voice translation</li>
+        <li><strong>Camera</strong> – for image and camera-based translation</li>
+        <li><strong>Photo Library</strong> – to select images for translation</li>
+      </ul>
+      <p>
+        These permissions are used solely for their intended features and are never accessed without your action.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Data Storage and Security</h2>
+      <p>
+        Translator Pro+ does not maintain user accounts or personal databases.
+        Translation history, if enabled, is stored locally on your device and remains under your control.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Third-Party Services</h2>
+      <p>
+        The app may use third-party translation services to provide accurate translations.
+        These services process text only to return translation results and do not receive personal user identity information.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Children’s Privacy</h2>
+      <p>
+        Translator Pro+ does not knowingly collect data from children under the age of 13.
+        The app is safe to use without providing personal information.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Policy Updates</h2>
+      <p>
+        We may update this Privacy Policy from time to time.
+        Any changes will be reflected on this page with an updated effective date.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Contact Us</h2>
+      <p>
+        If you have questions or concerns about this Privacy Policy, contact us at:
+        <br>
+        <a href="mailto:support@translatorproplus.app">support@translatorproplus.app</a>
+      </p>
+    </section>
+
+    <footer>
+      Translator Pro+
+    </footer>
+  </main>
+</body>
+</html>
