@@ -1,195 +1,377 @@
+```html
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — Cleanup AI</title>
-  <meta name="description" content="Privacy Policy for Cleanup AI. We respect your privacy and do not collect personal data.">
+  <title>Privacy Policy - Cleanup AI</title>
+  <meta
+    name="description"
+    content="Privacy Policy for Cleanup AI. Cleanup AI helps organize and review your photos and videos directly on your device."
+  >
   <meta name="author" content="Cleanup AI">
-  <link rel="canonical" href="https://your-username.github.io/your-repo/cleanup-ai-privacy.html">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
-    body {
-      margin: 0;
-      padding: 40px 20px;
-      font-family: 'Inter', system-ui, sans-serif;
-      background: #f5f7ff;
-      color: #1e293b;
+    :root {
+      --bg: #0b1220;
+      --bg-soft: #111a2b;
+      --card: rgba(19, 27, 43, 0.92);
+      --card-border: rgba(59, 130, 246, 0.18);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --body: #d7e0ee;
+      --primary: #2563eb;
+      --primary-soft: #60a5fa;
+      --accent: #38bdf8;
+      --divider: rgba(148, 163, 184, 0.12);
+      --shadow: 0 24px 70px rgba(2, 6, 23, 0.45);
+      --radius-xl: 28px;
+      --radius-lg: 18px;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      border-radius: 18px;
-      padding: 42px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Inter', system-ui, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.24), transparent 32%),
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 24%),
+        linear-gradient(180deg, #0a1020 0%, #0b1220 42%, #08101d 100%);
+      color: var(--text);
+      padding: 32px 18px;
+    }
+
+    .shell {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(17, 42, 99, 0.95), rgba(11, 18, 32, 0.98)),
+        linear-gradient(180deg, rgba(56, 189, 248, 0.08), transparent);
+      border: 1px solid rgba(96, 165, 250, 0.18);
+      border-radius: var(--radius-xl);
+      padding: 34px 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.28), transparent 68%);
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #dbeafe;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--primary-soft));
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.8);
     }
 
     h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 2rem;
-      margin-bottom: 6px;
-      color: #2563eb;
+      margin: 18px 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+      font-weight: 800;
+      color: #ffffff;
     }
 
-    small {
-      color: #64748b;
-      font-weight: 500;
+    .effective-date {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--primary-soft);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0;
+      color: var(--body);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .content {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-xl);
+      padding: 8px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .section {
+      padding: 24px 20px;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .section:last-child {
+      border-bottom: 0;
     }
 
     h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.25rem;
-      margin-top: 32px;
-      color: #3b82f6;
+      margin: 0 0 12px;
+      color: #eff6ff;
+      font-size: 1.18rem;
+      line-height: 1.3;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
 
     p {
-      line-height: 1.8;
-      color: #475569;
+      margin: 0 0 14px;
+      color: var(--body);
+      font-size: 15px;
+      line-height: 1.82;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
 
     ul {
-      margin-left: 20px;
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: var(--body);
     }
 
     li {
-      margin-bottom: 6px;
+      margin-bottom: 10px;
+      line-height: 1.75;
+    }
+
+    strong {
+      color: #ffffff;
+      font-weight: 700;
     }
 
     a {
-      color: #2563eb;
-      font-weight: 600;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: 700;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    footer {
-      margin-top: 40px;
+    .highlight {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(56, 189, 248, 0.08));
+      border: 1px solid rgba(96, 165, 250, 0.16);
+      border-radius: var(--radius-lg);
+      padding: 16px 18px;
+      margin-top: 14px;
+    }
+
+    .footer {
       text-align: center;
-      color: #64748b;
+      color: var(--muted);
+      font-size: 14px;
       font-weight: 600;
+      padding: 24px 8px 10px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 18px 12px 24px;
+      }
+
+      .hero {
+        padding: 26px 20px;
+        border-radius: 22px;
+      }
+
+      .content {
+        border-radius: 22px;
+      }
+
+      .section {
+        padding: 22px 16px;
+      }
+
+      h1 {
+        font-size: 2.05rem;
+      }
     }
   </style>
-
 </head>
-
 <body>
-  <main class="container">
-    <header>
+  <main class="shell">
+    <header class="hero">
+      <span class="badge">Cleanup AI Privacy</span>
       <h1>Privacy Policy</h1>
-      <small>Effective Date: <strong>Mar 1, 2026</strong></small>
-  <p>
-    Welcome to <strong>Cleanup AI</strong>.
-    Your privacy is important to us. This Privacy Policy explains how your information is handled when you use our application.
-  </p>
-</header>
+      <span class="effective-date">Effective Date: March 1, 2026</span>
+      <p class="intro">
+        Welcome to <strong>Cleanup AI</strong>. We built Cleanup AI to help you
+        review duplicate photos, similar images, screenshots, videos, and other
+        media on your device in a simple and private way. This Privacy Policy
+        explains how your information is handled when you use the app.
+      </p>
+    </header>
 
-<section>
-  <h2>1. Information We Collect</h2>
-  <p>
-    <strong>Cleanup AI</strong> does <strong>not</strong> collect, store, or sell personal information such as:
-  </p>
-  <ul>
-    <li>Name, email address, or contact information</li>
-    <li>Account credentials or passwords</li>
-    <li>Personal photos or videos from your device</li>
-    <li>Device identifiers or precise location data</li>
-  </ul>
-</section>
+    <section class="content">
+      <section class="section">
+        <h2>1. What Cleanup AI Collects</h2>
+        <p>
+          <strong>Cleanup AI does not collect, store, or sell your personal data.</strong>
+          You can use the app without creating an account, signing in, or sharing
+          your personal identity with us.
+        </p>
+        <ul>
+          <li>Your photos and videos are not uploaded to our servers.</li>
+          <li>Your name, email address, contacts, and passwords are not collected by the app for cleanup features.</li>
+          <li>Your private media is not sold, rented, or shared for advertising.</li>
+        </ul>
+      </section>
 
-<section>
-  <h2>2. Photo Library Access</h2>
-  <p>
-    Cleanup AI requires access to your device's photo library to help identify duplicate, similar, blurred, or unnecessary photos and videos.
-  </p>
+      <section class="section">
+        <h2>2. Photo and Video Access</h2>
+        <p>
+          Cleanup AI requests access to your photo library so it can analyze your
+          media and help you review duplicate items, similar items, screenshots,
+          large videos, and other cleanup suggestions.
+        </p>
+        <div class="highlight">
+          <p>
+            All scanning and analysis are designed to happen <strong>locally on your device</strong>.
+            Your photos and videos stay on your phone unless you explicitly choose to
+            share or export them yourself.
+          </p>
+        </div>
+      </section>
 
-  <p>
-    All photo analysis and cleanup operations occur <strong>locally on your device</strong>. Your photos and videos are never uploaded to our servers.
-  </p>
+      <section class="section">
+        <h2>3. How Cleanup AI Uses Permissions</h2>
+        <p>
+          The app may request access only to the permissions needed for its core features.
+        </p>
+        <ul>
+          <li><strong>Photo Library Access</strong> to review and organize your media.</li>
+          <li><strong>Notifications</strong> only if enabled, to remind you about duplicate-related cleanup opportunities.</li>
+          <li><strong>Biometric Access</strong> only if you choose to enable secure unlock features inside the app.</li>
+        </ul>
+        <p>
+          These permissions are used only to support app functionality and not for external tracking.
+        </p>
+      </section>
 
-  <p>
-    The app only accesses the photos necessary to provide cleanup suggestions and does not copy, store, or transmit your media externally.
-  </p>
-</section>
+      <section class="section">
+        <h2>4. On-Device AI and Media Analysis</h2>
+        <p>
+          Cleanup AI uses intelligent processing to identify duplicate photos,
+          similar images, blurry content, screenshots, videos, and other media categories.
+        </p>
+        <p>
+          This processing is intended to happen <strong>on-device</strong>, which means your media
+          does not need to leave your phone for the app to generate review suggestions.
+        </p>
+      </section>
 
-<section>
-  <h2>3. Permissions</h2>
-  <p>
-    The app may request the following permission:
-  </p>
+      <section class="section">
+        <h2>5. Local Storage</h2>
+        <p>
+          To improve your experience, Cleanup AI may store app preferences, scan state,
+          cached grouping results, selection state, and related app data locally on your device.
+        </p>
+        <p>
+          This local data is used only to help the app resume scans faster, remember your
+          choices, and provide a smoother cleanup experience.
+        </p>
+      </section>
 
-  <ul>
-    <li><strong>Photo Library Access</strong> – to scan and analyze photos for duplicates, similar images, large videos, and cleanup suggestions</li>
-  </ul>
+      <section class="section">
+        <h2>6. Sharing and Deletion Actions</h2>
+        <p>
+          If you choose to share, archive, favorite, or delete media using Cleanup AI,
+          those actions are triggered only by your direct interaction. Cleanup AI does not
+          perform automatic sharing or deletion without your input.
+        </p>
+      </section>
 
-  <p>
-    This permission is required for the core functionality of the app and is only used for organizing and managing your media.
-  </p>
-</section>
+      <section class="section">
+        <h2>7. Third-Party Services</h2>
+        <p>
+          Cleanup AI may use trusted third-party services that support app functionality,
+          such as platform services for app reviews, notifications, crash reporting, or
+          analytics. These services are not used to access your personal photo library content.
+        </p>
+      </section>
 
-<section>
-  <h2>4. AI Processing</h2>
-  <p>
-    Cleanup AI uses intelligent algorithms to detect duplicate photos, blurry images, screenshots, and large media files.
-  </p>
+      <section class="section">
+        <h2>8. Children's Privacy</h2>
+        <p>
+          Cleanup AI does not knowingly collect personal information from children under 13.
+          Because the app does not require account registration for its main cleanup features,
+          personal identity information is not required to use the app.
+        </p>
+      </section>
 
-  <p>
-    This analysis happens entirely <strong>on-device</strong>, meaning your photos never leave your phone during processing.
-  </p>
-</section>
+      <section class="section">
+        <h2>9. Policy Updates</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect app improvements,
+          feature changes, or legal requirements. If we make updates, the revised version
+          will be posted on this page with an updated effective date.
+        </p>
+      </section>
 
-<section>
-  <h2>5. Data Storage</h2>
-  <p>
-    Cleanup AI does not maintain user accounts or external databases.
-    Any preferences or scan results remain stored locally on your device and can be cleared by uninstalling the app.
-  </p>
-</section>
+      <section class="section">
+        <h2>10. Contact Us</h2>
+        <p>
+          If you have any questions, suggestions, or concerns about this Privacy Policy
+          or about Cleanup AI, please contact us at:
+        </p>
+        <p>
+          <a href="mailto:keturahruth9@gmail.com">keturahruth9@gmail.com</a>
+        </p>
+      </section>
+    </section>
 
-<section>
-  <h2>6. Third-Party Services</h2>
-  <p>
-    The app may use third-party services for analytics, crash reporting, or subscription management to improve the app experience.
-    These services do not have access to your photos or personal media.
-  </p>
-</section>
-
-<section>
-  <h2>7. Children’s Privacy</h2>
-  <p>
-    Cleanup AI does not knowingly collect personal data from children under the age of 13.
-    The app can be used without creating an account or providing personal information.
-  </p>
-</section>
-
-<section>
-  <h2>8. Policy Updates</h2>
-  <p>
-    We may update this Privacy Policy occasionally.
-    Any updates will be posted on this page with a revised effective date.
-  </p>
-</section>
-
-<section>
-  <h2>9. Contact Us</h2>
-  <p>
-    If you have any questions or concerns regarding this Privacy Policy, please contact us at:
-    <br>
-    <a href="mailto:keturahruth9@gmail.com">keturahruth9@gmail.com</a>
-  </p>
-</section>
-
-<footer>
-  Cleanup AI
-</footer>
+    <footer class="footer">
+      Cleanup AI
+    </footer>
   </main>
 </body>
 </html>
+```
