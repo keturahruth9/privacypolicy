@@ -32,6 +32,9 @@
       --primary-soft: #60a5fa;
       --accent: #38bdf8;
       --shadow: 0 24px 60px rgba(2, 6, 23, 0.35);
+
+      --radius-card: 16px;
+      --radius-inner: 12px;
     }
 
     * {
@@ -93,6 +96,7 @@
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.03em;
+      border-radius: 999px;
     }
 
     .badge::before {
@@ -140,6 +144,8 @@
       background: linear-gradient(180deg, var(--surface), var(--surface-2));
       border: 1px solid var(--border);
       box-shadow: var(--shadow);
+      border-radius: var(--radius-card);
+      overflow: hidden;
     }
 
     .section:last-child {
@@ -190,11 +196,17 @@
       word-break: break-word;
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
     .highlight {
       margin-top: 14px;
       padding: 14px 14px;
       background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(56, 189, 248, 0.08));
       border: 1px solid rgba(96, 165, 250, 0.16);
+      border-radius: var(--radius-inner);
+      overflow: hidden;
     }
 
     .footer {
@@ -210,6 +222,11 @@
     }
 
     @media (min-width: 768px) {
+      :root {
+        --radius-card: 18px;
+        --radius-inner: 14px;
+      }
+
       .hero {
         padding: 40px 24px 30px;
       }
