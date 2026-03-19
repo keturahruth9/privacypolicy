@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - CalculatorVault</title>
+  <meta name="description" content="Privacy Policy for CalculatorVault, including local storage, CloudKit backup, permissions, and advertising disclosures.">
+  <meta name="author" content="CalculatorVault">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f2efe8;
+      --paper: rgba(255, 252, 246, 0.92);
+      --ink: #1e2430;
+      --muted: #5f6b7a;
+      --accent: #0f766e;
+      --accent-soft: #d9f2ec;
+      --border: rgba(24, 40, 55, 0.12);
+      --shadow: 0 24px 80px rgba(26, 37, 48, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 18px 56px;
+      font-family: "Manrope", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.18), transparent 30%),
+        radial-gradient(circle at top right, rgba(191, 219, 254, 0.4), transparent 28%),
+        linear-gradient(180deg, #f8f4ec 0%, #eef4f2 100%);
+    }
+
+    .shell {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--paper);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 42px 28px 28px;
+      background:
+        linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(255, 255, 255, 0.4)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.35));
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      font-family: "Newsreader", serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle,
+    p,
+    li {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .effective {
+      margin-top: 10px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .content {
+      padding: 16px 28px 36px;
+    }
+
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(24, 40, 55, 0.08);
+    }
+
+    section:last-of-type {
+      border-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+      color: var(--ink);
+    }
+
+    ul {
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--border);
+    }
+
+    .pill-title {
+      margin: 0 0 4px;
+      color: var(--ink);
+      font-weight: 800;
+      font-size: 0.96rem;
+    }
+
+    footer {
+      padding: 8px 28px 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero,
+      .content,
+      footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <article class="card">
+      <header class="hero">
+        <div class="eyebrow">CalculatorVault Privacy Policy</div>
+        <h1>Your vault data, explained clearly.</h1>
+        <p class="subtitle">
+          This Privacy Policy explains how CalculatorVault handles photos, videos, permissions,
+          local vault storage, iCloud sync through CloudKit, and advertising services.
+        </p>
+        <p class="effective">Effective Date: March 19, 2026</p>
+
+        <div class="grid">
+          <div class="pill">
+            <p class="pill-title">Primary Storage</p>
+            <p>Vault files are stored locally on your device inside the app's private storage.</p>
+          </div>
+          <div class="pill">
+            <p class="pill-title">Optional Cloud Sync</p>
+            <p>When available, media may sync to your private iCloud CloudKit database for backup and restore.</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section>
+          <h2>1. Information We Handle</h2>
+          <p>
+            CalculatorVault is designed to store photos and videos inside a private vault area on your device.
+            To support vault organization and private iCloud backup, the app may handle:
+          </p>
+          <ul>
+            <li>Photos and videos you import or capture in the app</li>
+            <li>A generated vault user identifier stored in the device Keychain</li>
+            <li>A device-level identifier used only to organize your vault record structure</li>
+            <li>Basic file metadata such as file name, folder name, media type, and created date</li>
+          </ul>
+          <p>
+            CalculatorVault does <strong>not</strong> require account registration, username creation, or password submission to our servers.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Local Vault Storage</h2>
+          <p>
+            Photos and videos you add to the vault are stored locally in the app's document directory on your device.
+            This local storage is used to display, manage, and restore your vault content inside the app.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. CloudKit and iCloud Backup</h2>
+          <p>
+            CalculatorVault can sync vault media using Apple's CloudKit service in your <strong>private</strong> iCloud database.
+            When sync is available, the app may upload your vault photos or videos together with related metadata so that they can be restored later on the same vault identity.
+          </p>
+          <p>
+            CloudKit records may include your vault identifier, device identifier, folder name, media type, file name, timestamps, and the related media asset.
+            This data is stored in your private iCloud container, not in a public feed.
+          </p>
+          <p>
+            If internet access is unavailable, sync may retry later when the app becomes active again.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Permissions We Request</h2>
+          <ul>
+            <li><strong>Camera</strong> - to capture photos for the vault</li>
+            <li><strong>Photo Library</strong> - to import photos and videos into the vault</li>
+            <li><strong>Photo Library Add Access</strong> - when the app needs to write captured content into your photo library workflows</li>
+          </ul>
+          <p>
+            The app currently does <strong>not</strong> rely on microphone data for its main vault features.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Advertising</h2>
+          <p>
+            CalculatorVault includes Google Mobile Ads features such as banner, interstitial, native, and app open ads.
+            Ad providers may collect device or usage data according to their own privacy policies to deliver and measure ads.
+          </p>
+          <p>
+            If ads are disabled inside the app, related ad requests may stop for that app experience.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Browser and Third-Party Content</h2>
+          <p>
+            The app includes a browser view that can load external websites. When you visit third-party websites,
+            those websites may collect data under their own policies. CalculatorVault does not control third-party website practices.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Data Sharing</h2>
+          <p>
+            We do not sell your vault media. Your vault media is primarily stored locally on your device and, if sync is enabled and available,
+            may also be stored in your private CloudKit database through Apple.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Data Security</h2>
+          <p>
+            We use the iOS Keychain to store the generated vault user identifier and rely on Apple's platform protections,
+            your device security settings, and your private iCloud account protections where CloudKit sync is used.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Children's Privacy</h2>
+          <p>
+            CalculatorVault is not intended to knowingly collect personal information from children under 13.
+            If you believe a child has provided personal data through the app, please contact us so we can review the issue.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. When we make changes, we will update the effective date on this page.
+          </p>
+        </section>
+
+        <section>
+          <h2>11. Contact</h2>
+          <p>
+            If you have questions about this Privacy Policy, contact:
+            <a href="mailto:saikumar.iosdev@gmail.com">saikumar.iosdev@gmail.com</a>
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        CalculatorVault - Privacy Policy
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
