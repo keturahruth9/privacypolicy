@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Privacy Policy - Grammarify AI Keyboard</title>
+  <meta
+    name="description"
+    content="Privacy Policy for Grammarify AI Keyboard. Grammarify helps improve writing with AI-powered keyboard tools across apps."
+  >
+  <meta name="author" content="Grammarify AI Keyboard">
+  <meta name="theme-color" content="#11101b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg: #11101b;
+      --bg-soft: #1a1830;
+      --surface: rgba(25, 23, 44, 0.98);
+      --surface-2: rgba(33, 30, 58, 0.98);
+      --border: rgba(249, 115, 22, 0.14);
+      --divider: rgba(148, 163, 184, 0.12);
+      --text: #f8fafc;
+      --body: #d7d9e6;
+      --muted: #9ca3af;
+      --primary: #f97316;
+      --primary-soft: #fb923c;
+      --accent: #ec4899;
+      --shadow: 0 24px 60px rgba(2, 6, 23, 0.35);
+
+      --radius-card: 16px;
+      --radius-inner: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(249, 115, 22, 0.18), transparent 34%),
+        radial-gradient(circle at top right, rgba(236, 72, 153, 0.12), transparent 24%),
+        linear-gradient(180deg, #0f0d18 0%, #11101b 44%, #0c0b15 100%);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 28px 16px 22px;
+      background:
+        linear-gradient(135deg, rgba(59, 33, 23, 0.96), rgba(17, 16, 27, 0.98)),
+        linear-gradient(180deg, rgba(236, 72, 153, 0.08), transparent);
+      border-bottom: 1px solid rgba(249, 115, 22, 0.14);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      bottom: -80px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.22), transparent 68%);
+      pointer-events: none;
+    }
+
+    .hero-inner,
+    .content-inner,
+    .footer-inner {
+      width: min(100%, 920px);
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 34px;
+      padding: 0 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #fde7d7;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      border-radius: 999px;
+    }
+
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--primary-soft));
+      box-shadow: 0 0 16px rgba(236, 72, 153, 0.7);
+      flex: 0 0 auto;
+    }
+
+    h1 {
+      margin: 16px 0 8px;
+      font-size: clamp(2rem, 8vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .effective-date {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: var(--primary-soft);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin: 0;
+      max-width: 760px;
+      color: var(--body);
+      font-size: 15px;
+      line-height: 1.78;
+    }
+
+    .content {
+      padding: 14px 12px 24px;
+    }
+
+    .section {
+      margin-bottom: 12px;
+      padding: 18px 16px;
+      background: linear-gradient(180deg, var(--surface), var(--surface-2));
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: #fff7ed;
+      font-size: 1.05rem;
+      line-height: 1.32;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--body);
+      font-size: 14px;
+      line-height: 1.78;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--body);
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    a {
+      color: #f9a8d4;
+      text-decoration: none;
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      margin-top: 14px;
+      padding: 14px 14px;
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.16), rgba(236, 72, 153, 0.08));
+      border: 1px solid rgba(249, 115, 22, 0.16);
+      border-radius: var(--radius-inner);
+      overflow: hidden;
+    }
+
+    .footer {
+      border-top: 1px solid var(--divider);
+      padding: 20px 16px 28px;
+    }
+
+    .footer-inner {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    @media (min-width: 768px) {
+      :root {
+        --radius-card: 18px;
+        --radius-inner: 14px;
+      }
+
+      .hero {
+        padding: 40px 24px 30px;
+      }
+
+      .content {
+        padding: 18px 20px 32px;
+      }
+
+      .section {
+        padding: 24px 22px;
+        margin-bottom: 14px;
+      }
+
+      h2 {
+        font-size: 1.18rem;
+      }
+
+      p,
+      li {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="badge">Grammarify Privacy</span>
+      <h1>Privacy Policy</h1>
+      <span class="effective-date">Effective Date: May 16, 2026</span>
+      <p class="intro">
+        Welcome to <strong>Grammarify - AI Keyboard</strong>. Grammarify is built to help
+        you improve grammar, rewrite text, change tone, translate content, and use AI-powered
+        writing tools across apps. This Privacy Policy explains how your information is handled
+        when you use the Grammarify app and keyboard extension.
+      </p>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="content-inner">
+      <section class="section">
+        <h2>1. What Grammarify Collects</h2>
+        <p>
+          Grammarify collects only the information needed to provide account access,
+          keyboard features, and AI writing assistance.
+        </p>
+        <ul>
+          <li><strong>Account information</strong> such as your name, email address, and profile image if you sign in or create an account.</li>
+          <li><strong>Keyboard request data</strong> such as the text you choose to process with AI features, selected tone, selected AI mode, and selected language.</li>
+          <li><strong>App and keyboard preferences</strong> such as theme, appearance mode, selected app language, keyboard language choices, and custom AI tools you add or enable.</li>
+          <li><strong>Technical and service data</strong> such as device-level connectivity errors, rate-limit behavior, and service diagnostics needed to keep the app working.</li>
+        </ul>
+        <p>
+          Grammarify does <strong>not</strong> request access to your photos, contacts, location,
+          or advertising tracking in the current version of the app.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>2. Account and Sign-In Information</h2>
+        <p>
+          Grammarify currently supports account access through email and password,
+          Sign in with Apple, and Google Sign-In. If you use these features, we may
+          receive information associated with your authentication method, such as your
+          email address, display name, and profile image.
+        </p>
+        <div class="highlight">
+          <p>
+            If you use Sign in with Apple or Google Sign-In, your authentication data
+            may be processed through trusted identity providers and authentication services
+            such as <strong>Apple, Google, and Firebase Authentication</strong>.
+          </p>
+        </div>
+        <p>
+          Grammarify may also store a cached display name locally on your device to improve
+          your in-app experience, especially when restoring Apple Sign-In profile details.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. Keyboard Access and Full Access</h2>
+        <p>
+          Grammarify includes a custom iOS keyboard extension. To provide AI suggestions,
+          network-based writing tools, and app-to-keyboard syncing, the keyboard may request
+          <strong>Full Access</strong> in iOS.
+        </p>
+        <ul>
+          <li>Full Access allows the keyboard to connect to the internet for AI-powered suggestions.</li>
+          <li>Full Access also allows Grammarify to sync selected languages, themes, and custom tools between the app and keyboard.</li>
+          <li>When the keyboard is active, iOS may make text around the cursor available to the keyboard extension on your device.</li>
+        </ul>
+        <p>
+          Grammarify is designed so that text is sent for AI processing only when you
+          actively use Grammarify's AI panels or related keyboard features.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>4. AI Processing and Text You Submit</h2>
+        <p>
+          When you use features such as <strong>Fix Grammar</strong>, <strong>Change Tone</strong>,
+          <strong>Ask AI</strong>, or <strong>Translate</strong>, the text you enter or keep in the
+          active input context may be processed to generate suggestions.
+        </p>
+        <p>
+          Depending on the feature, this text may be sent securely to remote services or backend
+          endpoints used by Grammarify to generate AI responses. This can include the text you are
+          editing, selected prompt type, chosen tone, selected language, and related request context.
+        </p>
+        <div class="highlight">
+          <p>
+            If you do not want text to be processed through AI features, do not activate Grammarify's
+            AI tools for that content. Avoid using AI writing features for passwords, payment cards,
+            government IDs, medical details, or other highly sensitive information.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>5. Local Storage and On-Device Data</h2>
+        <p>
+          Grammarify stores certain information locally on your device and in the app group shared
+          container used by the app and keyboard extension.
+        </p>
+        <ul>
+          <li>Appearance settings and selected theme</li>
+          <li>Selected app language and keyboard languages</li>
+          <li>Custom tone items, custom assistants, and ordering preferences</li>
+          <li>Locally cached AI catalog data used to keep the app and keyboard in sync</li>
+          <li>Session-related preferences needed to restore your experience</li>
+        </ul>
+        <p>
+          This local data is used to improve continuity between the main app and the keyboard extension.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>6. How Grammarify Uses Information</h2>
+        <p>
+          Grammarify uses information only for legitimate app functionality, including:
+        </p>
+        <ul>
+          <li>Authenticating your account and restoring your session</li>
+          <li>Generating grammar, tone, AI, and translation suggestions</li>
+          <li>Saving your settings and syncing them between the app and keyboard</li>
+          <li>Improving reliability, preventing abuse, and troubleshooting errors</li>
+          <li>Allowing you to manage or delete your account from within the app</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Third-Party Services</h2>
+        <p>
+          Grammarify may use trusted third-party services to support app functionality.
+          These may include:
+        </p>
+        <ul>
+          <li><strong>Firebase Authentication</strong> for account sign-in and session management</li>
+          <li><strong>Google Sign-In</strong> for Google account authentication</li>
+          <li><strong>Sign in with Apple</strong> for Apple account authentication</li>
+          <li><strong>Remote AI or backend services</strong> used to process writing requests and return suggestions</li>
+        </ul>
+        <p>
+          These third parties may process information according to their own privacy terms
+          to the extent necessary to provide their services to Grammarify.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>8. Sharing, Sale, and Retention</h2>
+        <p>
+          Grammarify does <strong>not sell</strong> your personal information and is not designed
+          to share your data for third-party advertising.
+        </p>
+        <p>
+          We may share information only when necessary to operate the service, authenticate users,
+          process AI requests, comply with law, enforce our terms, or protect the safety and security
+          of users and the service.
+        </p>
+        <p>
+          We may retain account-related information while your account remains active, and we may retain
+          limited technical logs or service records for security, rate limiting, fraud prevention,
+          and troubleshooting. Data stored locally on your device may remain until you remove it,
+          delete the app, disable the keyboard, or delete your account where applicable.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>9. Your Choices</h2>
+        <p>
+          You can control your use of Grammarify in several ways:
+        </p>
+        <ul>
+          <li>Disable the keyboard extension in iOS Settings at any time</li>
+          <li>Turn off Full Access for the keyboard if you do not want network-enabled keyboard features</li>
+          <li>Choose not to use AI actions for specific text</li>
+          <li>Delete your account from within the app if that option is available in your account settings</li>
+          <li>Remove the app from your device to delete app data stored locally, subject to normal iOS behavior</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>10. Children's Privacy</h2>
+        <p>
+          Grammarify is not intended for children under 13, and we do not knowingly collect
+          personal information from children under 13. If you believe a child has provided
+          personal information through Grammarify, please contact us so we can review and address it.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Policy Updates</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect app improvements,
+          service changes, operational requirements, or legal obligations. When we make updates,
+          we will post the revised version on this page and update the effective date above.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>12. Contact Us</h2>
+        <p>
+          If you have any questions, suggestions, or concerns about this Privacy Policy
+          or about Grammarify - AI Keyboard, please contact us at:
+        </p>
+        <p>
+          <a href="mailto:junnu.katuri@gmail.com">junnu.katuri@gmail.com</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">&copy; Grammarify AI Keyboard</div>
+  </footer>
+</body>
+</html>
