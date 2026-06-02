@@ -1,0 +1,380 @@
+Here is a standalone Terms and Conditions HTML page matching your QR Reader privacy policy style:
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms and Conditions - QR Reader</title>
+  <meta
+    name="description"
+    content="Terms and Conditions for QR Reader, including app usage, permissions, user responsibilities, external links, disclaimers, and contact information."
+  >
+  <meta name="author" content="QR Reader">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,600&display=swap"
+    rel="stylesheet"
+  >
+  <style>
+    :root {
+      --bg: #000000;
+      --paper: rgba(18, 18, 20, 0.94);
+      --ink: #f5f7fa;
+      --muted: #a3adb8;
+      --accent: #ffd54a;
+      --accent-soft: rgba(255, 213, 74, 0.14);
+      --border: rgba(255, 255, 255, 0.08);
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 18px 56px;
+      font-family: "Manrope", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(255, 213, 74, 0.12), transparent 24%),
+        radial-gradient(circle at top right, rgba(96, 165, 250, 0.12), transparent 22%),
+        linear-gradient(180deg, #040404 0%, #0a0a0b 100%);
+    }
+
+    .shell {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--paper);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 42px 28px 28px;
+      background:
+        linear-gradient(135deg, rgba(255, 213, 74, 0.12), rgba(255, 255, 255, 0.02)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 8px;
+      font-family: "Newsreader", serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle,
+    p,
+    li {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .effective {
+      margin-top: 10px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .content {
+      padding: 16px 28px 36px;
+    }
+
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    section:last-of-type {
+      border-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+      color: var(--ink);
+    }
+
+    ul {
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+    }
+
+    .pill-title {
+      margin: 0 0 4px;
+      color: var(--ink);
+      font-weight: 800;
+      font-size: 0.96rem;
+    }
+
+    footer {
+      padding: 8px 28px 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      .hero,
+      .content,
+      footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <article class="card">
+      <header class="hero">
+        <div class="eyebrow">QR Reader Terms</div>
+        <h1>Terms and Conditions</h1>
+        <p class="subtitle">
+          These Terms and Conditions explain the rules for using QR Reader, including scanning,
+          creating, saving, sharing, and opening QR codes, barcodes, links, and related content.
+        </p>
+        <p class="effective">Effective Date: March 29, 2026</p>
+
+        <div class="grid">
+          <div class="pill">
+            <p class="pill-title">App Usage</p>
+            <p>Use QR Reader responsibly and only for lawful purposes.</p>
+          </div>
+          <div class="pill">
+            <p class="pill-title">Your Content</p>
+            <p>You are responsible for the codes, links, text, images, and data you scan, create, save, or share.</p>
+          </div>
+          <div class="pill">
+            <p class="pill-title">External Actions</p>
+            <p>Websites, calls, SMS, email, maps, and other external actions are controlled by third-party services.</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section>
+          <h2>1. Acceptance of Terms</h2>
+          <p>
+            By downloading, accessing, or using QR Reader, you agree to these Terms and Conditions.
+            If you do not agree with these Terms, please do not use the app.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Use of the App</h2>
+          <p>
+            QR Reader allows you to scan QR codes and barcodes, create QR codes and barcodes,
+            organize saved items, open decoded content, and share generated or scanned content.
+          </p>
+          <p>
+            You agree to use the app only for lawful, safe, and appropriate purposes.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. User Responsibilities</h2>
+          <ul>
+            <li>You are responsible for any QR code, barcode, text, image, link, contact, event, Wi-Fi, location, or other content you scan, create, save, open, or share.</li>
+            <li>You must not use QR Reader to create, distribute, or promote harmful, misleading, illegal, abusive, or unauthorized content.</li>
+            <li>You should verify links and decoded content before opening them or sharing them with others.</li>
+            <li>You are responsible for keeping your device secure and managing your saved scan history and created codes.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. License to Use QR Reader</h2>
+          <p>
+            We grant you a limited, non-exclusive, non-transferable, revocable license to use QR Reader
+            for personal or lawful business use, subject to these Terms.
+          </p>
+          <p>
+            You may not copy, modify, reverse engineer, distribute, sell, rent, or misuse the app except where permitted by applicable law.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Scanned and Created Content</h2>
+          <p>
+            QR Reader does not control the accuracy, safety, legality, or reliability of content contained in QR codes,
+            barcodes, links, or other encoded data. Scanned results may lead to third-party websites, apps, files,
+            contact actions, calendar actions, phone actions, SMS actions, email actions, map actions, or other services.
+          </p>
+          <p>
+            You should review any decoded content carefully before opening, saving, sharing, calling, emailing,
+            messaging, navigating to, or otherwise using it.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Permissions and Device Features</h2>
+          <p>
+            QR Reader may request access to device features such as the camera, photo library, location,
+            calendar, contacts, and sharing tools to provide app functionality. You can manage permissions
+            through your device settings.
+          </p>
+          <p>
+            Some features may not work correctly if required permissions are denied.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. External Links and Third-Party Services</h2>
+          <p>
+            QR Reader may allow you to open websites, maps, phone links, SMS links, email links,
+            calendar actions, contact actions, app links, or other third-party services.
+          </p>
+          <p>
+            We are not responsible for third-party websites, apps, services, content, security practices,
+            availability, or terms. Your use of third-party services is at your own risk and subject to their own terms.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Sharing and Exporting</h2>
+          <p>
+            When you share or export scanned content, created QR codes, barcode images, text, links,
+            or other data, you are responsible for where that content is sent and how it is used.
+          </p>
+          <p>
+            We are not responsible for content after you share it outside QR Reader.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. App Availability and Updates</h2>
+          <p>
+            We may update, improve, modify, suspend, or discontinue any part of QR Reader at any time.
+            We do not guarantee that the app will always be available, error-free, compatible with every device,
+            or suitable for every use case.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. No Professional Advice</h2>
+          <p>
+            QR Reader is provided as a utility app. Scanned or generated content should not be treated as
+            professional, legal, financial, medical, security, or technical advice. You should verify important
+            information independently before relying on it.
+          </p>
+        </section>
+
+        <section>
+          <h2>11. Disclaimer of Warranties</h2>
+          <p>
+            QR Reader is provided on an "as is" and "as available" basis. To the fullest extent permitted by law,
+            we disclaim all warranties, express or implied, including warranties of accuracy, reliability,
+            merchantability, fitness for a particular purpose, and non-infringement.
+          </p>
+        </section>
+
+        <section>
+          <h2>12. Limitation of Liability</h2>
+          <p>
+            To the fullest extent permitted by law, QR Reader and its owners, developers, and affiliates
+            will not be liable for any direct, indirect, incidental, consequential, special, punitive,
+            or other damages arising from your use of, or inability to use, the app.
+          </p>
+          <p>
+            This includes damages related to scanned links, third-party services, data loss, device issues,
+            unauthorized sharing, harmful content, or reliance on decoded information.
+          </p>
+        </section>
+
+        <section>
+          <h2>13. Termination</h2>
+          <p>
+            We may suspend or terminate access to QR Reader if we believe you have violated these Terms,
+            misused the app, or used the app in a harmful, unlawful, or unauthorized way.
+          </p>
+        </section>
+
+        <section>
+          <h2>14. Changes to These Terms</h2>
+          <p>
+            We may update these Terms and Conditions from time to time. When we make changes,
+            we will update the effective date on this page. Continued use of QR Reader after changes
+            means you accept the updated Terms.
+          </p>
+        </section>
+
+        <section>
+          <h2>15. Contact</h2>
+          <p>
+            If you have questions about these Terms and Conditions, contact:
+            <a href="mailto:support@miracleapps.in">support@miracleapps.in</a>
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        QR Reader - Terms and Conditions
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
+```
